@@ -1,0 +1,33 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: #003D5C;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+}
+nav {
+    background-color: #022140;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+nav a {
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+.content {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.content img {
+    width: 200px;
+    height: auto;
+    margin-right: 20px;
+}
