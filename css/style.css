@@ -31,3 +31,15 @@ nav a {
     height: auto;
     margin-right: 20px;
 }
+
+header img {
+    width: 100%; /* make the header image responsive */
+    max-height: 300px; /* reduce the maximum height */
+    object-fit: cover; /* ensure the image covers the area without distorting the aspect ratio */
+}
+
+.content img {
+    width: 150px; /* adjust according to your layout needs */
+    height: auto; /* maintain aspect ratio */
+    margin-right: 20px;
+}
