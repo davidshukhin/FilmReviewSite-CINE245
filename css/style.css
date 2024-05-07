@@ -1,31 +1,77 @@
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
+    background: #f4f4f4;
+    color: #333;
 }
+
 header {
-    background-color: #003D5C;
-    color: white;
-    padding: 10px 20px;
-    text-align: center;
-}
-nav {
     background-color: #022140;
     color: white;
+    padding: 20px 10px;
     text-align: center;
-    padding: 10px;
+    position: relative;
 }
+
+header img {
+    max-width: 100%;
+    height: auto;
+}
+
+nav {
+    background-color: #014a68;
+    text-align: center;
+    padding: 10px 0;
+}
+
 nav a {
     color: white;
     padding: 10px 20px;
     text-decoration: none;
+    font-size: 18px;
 }
+
+nav a.active, nav a:hover {
+    background-color: #f4f4f4;
+    color: #014a68;
+}
+
 .content {
-    padding: 20px;
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+    gap: 20px;
 }
+
+.main-poster {
+    width: 50%; /* Increased from 40% to 50% */
+    height: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    
+}
+
+.movie-description {
+    width: 50%; /* Decreased from 60% to 50% */
+    background: white;
+    padding: 20px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main-poster, .movie-description {
+        width: 100%;
+    }
+}
+
+
 .content img {
     width: 200px;
     height: auto;
